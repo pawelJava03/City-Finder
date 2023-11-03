@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hello</title>
+  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/buttons.css}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<h1>Hello!</h1>
+<h2>TOC</h2>
+<p>Time</p>
+<a th:href="@{/time}" class="modern-button">Check time</a>
+<p>Weather</p>
+<a th:href="@{/weather}" class="modern-button">Check the weather today</a>
+<p>Hot news</p>
+<p></p>
+
+<!--<h1>to jest wiadomosc z pliku hello.html</h1>-->
+<!--<p></p>-->
+<!--<h1 th:text="${hello}"></h1>-->
+<!--<p th:text="${czas}"></p>-->
+</body>
+</html>

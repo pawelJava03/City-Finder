@@ -1,0 +1,28 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Ukryj paski przewijania */
+}
+
+.clock-container {
+    font-size: 4em; /* Rozmiar czcionki */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cień tekstu */
+    animation: fadeIn 2s ease; /* Animacja pojawiania się */
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
