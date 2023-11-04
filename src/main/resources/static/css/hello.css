@@ -48,3 +48,24 @@ form input[type="text"] {
         background-color: #005bab;
     }
 }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.contact-info {
+    margin-left: 20px;
+}
+
+address {
+    margin: 5px 0;
+}

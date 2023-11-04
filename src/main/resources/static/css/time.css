@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Ukryj paski przewijania */
+    overflow: hidden;
 }
 
 .clock-container {

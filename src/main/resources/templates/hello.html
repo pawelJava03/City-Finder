@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Hello</title>
-  <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+  <title>TOC</title>
+  <link th:href="@{/css/hello.css}" rel="stylesheet" type="text/css" />
   <link th:href="@{/css/buttons.css}" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
-<h1>Hello!</h1>
-<h2>TOC</h2>
+
+<h1>TOC</h1>
 <p>Time</p>
 <a th:href="@{/time}" class="modern-button">Check time</a>
 <p>Weather</p>
 <a th:href="@{/weather}" class="modern-button">Check the weather today</a>
 <p>Hot news</p>
 <p></p>
+<footer>
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <address>
+      Paweł Staciwa<br>
+      Wilanów<br>
+      Warszawa, 02-962<br>
+      Phone: (+48) 699 715 591<br>
+      Email: pa.st.a@wp.pl
+    </address>
+  </div>
+</footer>
 
 </body>
 </html>

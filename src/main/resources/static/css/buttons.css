@@ -1,20 +1,18 @@
-/* buttons.css */
 
 .modern-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0073e6; /* Kolor tła przycisku */
-    color: #fff; /* Kolor tekstu */
+    background-color: #0073e6;
+    color: #fff;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 5px; /* Zaokrąglenie krawędzi przycisku */
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Animacja zmiany koloru tła po najechaniu myszką */
+    transition: background-color 0.3s;
 
-    /* Dla efektu po najechaniu myszką */
     &:hover {
-        background-color: #005bab; /* Kolor tła po najechaniu myszką */
+        background-color: #005bab;
     }
 }
