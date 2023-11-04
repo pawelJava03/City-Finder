@@ -3,6 +3,7 @@
 <head>
   <title>Weather for City</title>
   <link th:href="@{/css/weather.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/buttons.css}" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -10,6 +11,13 @@
 <p>Temperature: <span th:text="${temperature}"></span>°C</p>
 <p>Wind Speed: <span th:text="${windSpeed}"></span> m/s</p>
 <p>Weather Type: <span th:text="${weatherType}"></span></p>
+
+<form th:action="@{'/weather?city=' + ${city}}" method="get">
+  <input type="text" name="city" placeholder="Enter new city name">
+  <button type="submit" class="modern-button">Change City</button>
+</form>
+
+
 
 </body>
 </html>

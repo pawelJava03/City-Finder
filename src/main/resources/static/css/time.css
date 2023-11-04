@@ -11,10 +11,10 @@ body {
 }
 
 .clock-container {
-    font-size: 4em; /* Rozmiar czcionki */
+    font-size: 4em;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Cień tekstu */
-    animation: fadeIn 2s ease; /* Animacja pojawiania się */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease;
 
 }
 
