@@ -1,5 +1,6 @@
 package com.example.thymeleafproject;
 
+import com.example.thymeleafproject.readAPI.KeyReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Controller
 public class WeatherController {
-    private final String apiKey = "f0215c750224bad39b030e666f1236bb";
+    private final String apiKey = KeyReader.getKey();
     @Autowired
     private RestTemplate restTemplate;
 
