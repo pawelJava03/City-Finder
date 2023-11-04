@@ -1,50 +1,112 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
+/* Resetowanie domyślnych stylów przeglądarek */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Podstawowe style strony */
+body {
+    font-family: "Roboto Light";
+    background-color: rgba(252, 175, 89, 1);
+    background-image: linear-gradient(246deg, rgba(252, 175, 89, 1) 0%, rgba(229, 59, 133, 1) 100%);
+    color: #333;
+}
 
-h1 {
-    background-color: #333;
+.header {
+    background-color: #3498db;
     color: #fff;
+    text-align: center;
     padding: 20px;
 }
 
-h1 span {
-    color: #ff9900;
+.header h1 {
+    font-size: 24px;
+    color: black;
 }
 
-p {
-    font-size: 18px;
+#choose-city {
+    text-align: center;
     margin: 20px 0;
 }
 
-span {
-    font-weight: bold;
-    color: #007BFF;
-}
-form input[type="text"] {
-    height: 40px;
-    margin-right: 5px;
+#choose-city input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.modern-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0073e6;
+#choose-city button {
+    background-color: #3498db;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+#weather-details {
     text-align: center;
+    margin: 20px 0;
+    color: #000000;
+}
+
+#weather-details p {
+    font: bold 22px "Roboto Light";
+    margin: 10px 0;
+}
+
+#city-info {
+    color: black;
+    text-align: left;
+    margin: 20px 0;
+}
+
+#city-info p {
+    font-size: 22px;
+}
+
+#back-button {
+    text-align: left;
+    margin: 20px 0;
+}
+
+#back-button a {
+    background-color: #3498db;
+    color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+}
 
-    &:hover {
-        background-color: #005bab;
+/* Media query dla responsywności */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    #choose-city input[type="text"] {
+        width: 80%;
+    }
+
+    #choose-city button {
+        width: 80%;
+    }
+
+    #weather-details p {
+        font-size: 16px;
+    }
+
+    #city-info p {
+        font-size: 16px;
+    }
+
+    #back-button a {
+        width: 80%;
     }
 }
