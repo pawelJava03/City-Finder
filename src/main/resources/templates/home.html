@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href="@{/css/home.css}" rel="stylesheet" type="text/css" />
+  <title>Home</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome at City-Finder</h1>
+</div>
+
+<div class="city-finder-description">
+<p>Aplikacja City-Finder jest aplikacją mojego pomysłu. Po podaniu przez użytkownika miasta aplikacja zwraca
+aktualną pogode oraz główne informacje o danym mieście korzystając z api openwathermap oraz api wikipedii. </p>
+</div>
+
+<div class="gotoCity-finder">
+  <h2>Naciśnij aby przejść do City-Finder</h2>
+<!--  button-->
+  <a th:href="@{/city-finder}" class="modern-button">City-Finder</a>
+
+</div>
+
+<div class="info">
+  <h2>Naciśnij aby zobaczyc informacje o mnie.</h2>
+<!--  button-->
+  <a th:href="@{/pawelstaciwa}" class="modern-button">About Me</a>
+
+</div>
+
+</body>
+</html>

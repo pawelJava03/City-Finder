@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href="@{/css/aboutme.css}" rel="stylesheet" type="text/css" />
+  <title>Paweł Staciwa</title>
+</head>
+<body>
+<h1>Paweł Staciwa</h1>
+<div class="info">
+  <p>Mam na imię Paweł, jestm absolwentem klasy informatycznej w Technikum im. Jana Karskiego w Warszawie,
+  oraz 6-miesięcznego kursu "Programista Java XL" w szkole programowania ALX.
+  Pisaniem w języku Java zajmuje sie od niespełna roku, jednakże wciąż jestem głodny informacji
+  oraz zdeterminowany do poszerzania swojej aktualnej wiedzy.</p>
+</div>
+
+<div class="github">
+<h3>Mój profil Github</h3>
+<a th:href="@{https://github.com/pawelJava03}" class="modern-button">Mój profil Github</a>
+</div>
+
+<div class="linkedin">
+<h3>Mój profil LinkedIn</h3>
+<a th:href="@{https://www.linkedin.com/in/pawel-staciwa/}" class="modern-button">Mój profil LinkedIn</a>
+</div>
+<div class="poswiadczenia">
+  <h3>Poświadczenia ukończenia kursów w szkole ALX</h3>
+  <a th:href="@{https://www.alx.pl/certyfikat/pawel-staciwa/3f8414fb4aef498ab4a790eccd9891dc/}" class="modern-button">Podstawowy kurs Java</a>
+<!--  <a th:href="@{}" class="modern-button">Java - Programista web/backend</a>-->
+
+
+</div>
+
+<div class="back">
+<a th:href="@{/home}" class="modern-button">Back to Home</a>
+</div>
+
+</body>
+</html>

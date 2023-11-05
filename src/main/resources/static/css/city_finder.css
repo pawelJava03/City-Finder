@@ -1,11 +1,10 @@
-/* Resetowanie domyślnych stylów przeglądarek */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Podstawowe style strony */
+
 body {
     font-family: "Roboto Light";
     background-color: rgba(252, 175, 89, 1);
@@ -84,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* Media query dla responsywności */
+
 @media (max-width: 768px) {
     .header h1 {
         font-size: 20px;

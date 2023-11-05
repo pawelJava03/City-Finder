@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <title>Weather for City</title>
-  <link th:href="@{/css/weather.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/city_finder.css}" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -10,22 +10,23 @@
     <h1>Weather for City: <span th:text="${city}"></span></h1>
   </div>
   <div id="choose-city">
-    <form th:action="@{'/weather?city=' + ${city}}" method="get">
+    <form th:action="@{'/city-finder?city=' + ${city}}" method="get">
       <input type="text" name="city" placeholder="Enter new city name">
       <button type="submit" class="modern-button">Change City</button>
     </form>
   </div>
   <div id="weather-details">
+    <h2>Weather in <span th:text="${city}"></span> </h2>
     <p>Temperature: <span th:text="${temperature}"></span>°C</p>
     <p>Wind Speed: <span th:text="${windSpeed}"></span> m/s</p>
     <p>Weather Type: <span th:text="${weatherType}"></span></p>
   </div>
   <div id="city-info">
-    <h2>Informations about yours city</h2>
+    <h2>Informations about <span th:text="${city}"></span> </h2>
     <p><span th:text="${cityInfo}"></span> </p>
   </div>
   <div id="back-button">
-    <a th:href="@{/hello}" class="modern-button">Back to TOC</a>
+    <a th:href="@{/home}" class="modern-button">Back to Home</a>
   </div>
 
 </body>

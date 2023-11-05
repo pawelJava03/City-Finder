@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Light";
+    background-color: rgba(252, 175, 89, 1);
+    background-image: linear-gradient(246deg, rgba(252, 175, 89, 1) 0%, rgba(229, 59, 133, 1) 100%);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0078d4;
+}
+
+.info {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+.gotoCity-finder {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+.city-finder-description {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 22px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+a.modern-button {
+    display: inline-block;
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.modern-button:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #0078d4;
+}
+
+.github, .linkedin, .poswiadczenia, .back {
+    margin: 20px 0;
+}

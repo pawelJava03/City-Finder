@@ -17,12 +17,12 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 @Controller
-public class WeatherController {
+public class CityFinderController {
     private final String apiKey = KeyReader.getKey();
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/weather")
+    @GetMapping("/city-finder")
     public String getWeather(@RequestParam(name = "city", required = false, defaultValue = "Warsaw") String city, Model model) {
         try {
             String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + apiKey;
@@ -41,23 +41,19 @@ public class WeatherController {
             String apiUrl = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles="+city;
             String response = restTemplate.getForObject(apiUrl, String.class);
 
-            // Parsuj odpowiedź JSON
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonNode = objectMapper.readTree(response);
 
-            // Pobierz opis Warszawy
             JsonNode pages = jsonNode.path("query").path("pages");
             String firstPageKey = pages.fieldNames().next();
             String cityDescription = pages.path(firstPageKey).path("extract").asText();
 
-            // Usuń znaczniki HTML i formatuj tekst
             Document doc = Jsoup.parse(cityDescription);
             String plainText = doc.text();
 
-            // Dodaj sformatowany tekst do modelu
             model.addAttribute("cityInfo", plainText);
 
-            return "weather";
+            return "city_finder";
         }catch (HttpClientErrorException e){
             return "cityNotFound";
         }catch (RestClientException e){

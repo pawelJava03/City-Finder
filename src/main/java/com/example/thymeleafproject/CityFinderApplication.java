@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThymeleafProjectApplication {
+public class CityFinderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ThymeleafProjectApplication.class, args);
+        SpringApplication.run(CityFinderApplication.class, args);
     }
 
 }
